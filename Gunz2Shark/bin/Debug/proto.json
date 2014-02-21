@@ -1,0 +1,5844 @@
+[
+    {
+        "desc": "cmd::LOCAL::NTF_ACCEPT", 
+        "id": "1", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::LOCAL::NTF_DISCONNECT", 
+        "id": "2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::LOCAL::NTF_CONNECTED", 
+        "id": "4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::LOCAL::NTF_UDP_INIT", 
+        "id": "3", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::LOCAL::NTF_HOLEPUNCHING_RESULT", 
+        "id": "5", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_STATE", 
+        "id": "C12", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_STAGE_STATE", 
+        "id": "3FD", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_STAGE_STATE", 
+        "id": "C13", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_STAGE_STATE", 
+        "id": "C14", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CONNECT_UFS", 
+        "id": "C1C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "UFSCONNECTINFO", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2RDV::REQ_CHECK_UDP_RDV", 
+        "id": "2328", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "RDV2C::ACK_CHECK_UDP_RDV", 
+        "id": "238C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "RDV2C::REQ_CHECK_UDP_RDV2", 
+        "id": "238D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2RDV::ACK_CHECK_UDP_RDV2", 
+        "id": "2329", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_LOGIN", 
+        "id": "3E8", 
+        "params": [
+            {
+                "name": "REQUESTLOGININFO", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_LOGIN", 
+        "id": "C26", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "LoginInfo", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_DUPLICATE_LOGIN", 
+        "id": "C30", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CONTINUE_BATTLE_PLAYER", 
+        "id": "C3A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHARACTERLIST", 
+        "id": "C4E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "CHARACTERINFO", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_SET_NICKNAME", 
+        "id": "406", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_SET_NICKNAME", 
+        "id": "C58", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_STATE_CHARACTER_CREATE", 
+        "id": "407", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_STATE_CHARACTER_CREATE", 
+        "id": "C59", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_STATE_CHARACTER_LIST", 
+        "id": "408", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_STATE_CHARACTER_LIST", 
+        "id": "C5A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_PURCHASE_CHARACTER", 
+        "id": "410", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_PURCHASE_CHARACTER", 
+        "id": "C62", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_DESTROY_CHARACTER", 
+        "id": "41A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_DESTROY_CHARACTER", 
+        "id": "C6C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_BACK_TO_LOGIN", 
+        "id": "424", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_BACK_TO_LOGIN", 
+        "id": "C76", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_SELECT_CHARACTER", 
+        "id": "42E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_SELECT_CHARACTER", 
+        "id": "C80", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_SELECT_CHARACTER", 
+        "id": "C81", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIENDLIST", 
+        "id": "C8A", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "FRIENDINFO", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_OBSERVERLIST", 
+        "id": "C94", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_PLAYER_SETUP_DATAS", 
+        "id": "C9E", 
+        "params": [
+            {
+                "name": "STAGESETUPINFO", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHARACTER_BATTLE_RANKING_SCORE", 
+        "id": "CA8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_UPDATE_CHARACTER_BATTLE_STAT", 
+        "id": "CB2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_BACK_TO_CHARACTERLIST", 
+        "id": "438", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_BACK_TO_CHARACTERLIST", 
+        "id": "CBC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_STAGE_LIST", 
+        "id": "442", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_STAGE_LIST", 
+        "id": "CC6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_STAGE_LIST", 
+        "id": "CC7", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_UPDATE_STAGELIST", 
+        "id": "CD0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_USE_ITEM", 
+        "id": "640", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_USE_ITEM", 
+        "id": "1068", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_FRIEND_ADD", 
+        "id": "456", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_FRIEND_ADD", 
+        "id": "CDA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIEND_ADD", 
+        "id": "CE4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_FRIEND_REPLY", 
+        "id": "460", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_FRIEND_REPLY", 
+        "id": "D02", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIEND_REPLY", 
+        "id": "D0C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_FRIEND_REMOVE", 
+        "id": "46A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_FRIEND_REMOVE", 
+        "id": "CEE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIEND_REMOVE", 
+        "id": "CF8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIEND_LOCATION", 
+        "id": "D16", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FRIEND_SELECT_CHARACTER", 
+        "id": "D17", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_LOBBY_SERVER_DOWN", 
+        "id": "D20", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_START_MATCH", 
+        "id": "51E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_START_MATCH", 
+        "id": "ECE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CANCEL_MATCH", 
+        "id": "528", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CANCEL_MATCH", 
+        "id": "ED8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_START_MATCH", 
+        "id": "EDA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MATCH_FAILED", 
+        "id": "EDC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ENTER_MATCH_STAGE", 
+        "id": "EE2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_MATCH_VOTE_MAP", 
+        "id": "532", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_MATCH_VOTE_MAP", 
+        "id": "EF6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MATCH_VOTE_MAP", 
+        "id": "F00", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CANCEL_MATCH", 
+        "id": "EDB", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MATCH_DODGED", 
+        "id": "F01", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ITEMINSTANCE", 
+        "id": "F02", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MATCH_PREPARE_TO_START", 
+        "id": "EEC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_OPTIMITE_ENCHANT_GOLD", 
+        "id": "5AA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_OPTIMITE_ENCHANT_GOLD", 
+        "id": "F6E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TESLA_MACHINE_LIST", 
+        "id": "622", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_TESLA_MACHINE_LIST", 
+        "id": "104A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TESLA_BUFF_LIST", 
+        "id": "623", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_TESLA_BUFF_LIST", 
+        "id": "104B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TESLA_MACHINE_INFO", 
+        "id": "624", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_TESLA_MACHINE_INFO", 
+        "id": "104C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TESLA_MACHINE_USE", 
+        "id": "625", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_TESLA_MACHINE_USE", 
+        "id": "104D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TESLA_MACHINE_RUN_COUNTER_LIST", 
+        "id": "626", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_TESLA_MACHINE_RUN_COUNTER_LIST", 
+        "id": "104E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_TESLA_MACHINE_ACQUIRE_KEY_ITEM", 
+        "id": "104F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_PURCHASE_ITEM", 
+        "id": "5BE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_PURCHASE_ITEM", 
+        "id": "FA0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_INSTANCE_LIST", 
+        "id": "5C8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_INSTANCE_LIST", 
+        "id": "FAA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_PURCHASE_SLOT", 
+        "id": "5D2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_PURCHASE_SLOT", 
+        "id": "1007", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_DELETE", 
+        "id": "5DC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_DELETE", 
+        "id": "100E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ITEM_DELETE", 
+        "id": "100F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_REPAIR", 
+        "id": "5DD", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_REPAIR", 
+        "id": "1011", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_DECOMPOSE", 
+        "id": "5DE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_DECOMPOSE", 
+        "id": "1012", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_TRANSFORM", 
+        "id": "5DF", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_TRANSFORM", 
+        "id": "1013", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_TRANSFORM_NEED_LIST", 
+        "id": "5E0", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_TRANSFORM_NEED_LIST", 
+        "id": "1014", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ITEM_TRANSFORM_REWARD_LIST", 
+        "id": "5E1", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_ITEM_TRANSFORM_REWARD_LIST", 
+        "id": "1015", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FEVER_GAUGE", 
+        "id": "1010", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_OPTIMITE_ENCHANT", 
+        "id": "5AB", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_OPTIMITE_ENCHANT", 
+        "id": "F6F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_USER_REPORT", 
+        "id": "5E6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_USER_REPORT", 
+        "id": "1018", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_USER_REPORT", 
+        "id": "1019", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_HACKSHIELD_DATA", 
+        "id": "F78", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_HACKSHIELD_DATA", 
+        "id": "5B4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_HACKSHIELD_DATA", 
+        "id": "F79", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_CREATE_CLAN", 
+        "id": "60E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_INVITE_CLAN", 
+        "id": "60F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_RESPONSE_INVITE_CLAN", 
+        "id": "610", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_VANISH_CLANMEMBER", 
+        "id": "611", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_DELETE_CLAN", 
+        "id": "612", 
+        "params": []
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_WITHDRAW_FROM_CLAN", 
+        "id": "613", 
+        "params": []
+    }, 
+    {
+        "desc": "C2UF::REQ_CLAN_RENAME_CLAN", 
+        "id": "614", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_SUPPLY_BOX_OPEN", 
+        "id": "618", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_SUPPLY_BOX_OPEN", 
+        "id": "1037", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MAIL_LIST", 
+        "id": "1038", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_MAIL_OPEN", 
+        "id": "619", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_MAIL_OPEN", 
+        "id": "103A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_MAIL_CLOSE", 
+        "id": "61A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_MAIL_CLOSE", 
+        "id": "103B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_INVITE_PLAYER", 
+        "id": "578", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_INVITE_PLAYER", 
+        "id": "F0A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_INVITED_PLAYER", 
+        "id": "F0B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_INVITE_REPLY", 
+        "id": "582", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_INVITE_REPLY", 
+        "id": "F0C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_FOLLOW_PLAYER", 
+        "id": "583", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_FOLLOW_PLAYER", 
+        "id": "F13", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_PARTY_INFO", 
+        "id": "F0D", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_PARTY_LEAVE", 
+        "id": "58C", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_PARTY_LEAVE", 
+        "id": "F0E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_PARTY_CHATTING", 
+        "id": "58D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_USER_CASH", 
+        "id": "1054", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_PUNISHMENT", 
+        "id": "1055", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_PARTY_CHATTING", 
+        "id": "F0F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_PARTY_CHATTING", 
+        "id": "F10", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_SELECT_CHARACTER_TO_PARTY", 
+        "id": "F11", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_CLAN_INFO_TO_PARTY", 
+        "id": "F12", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_USERBLOB", 
+        "id": "5A0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_USERBLOB", 
+        "id": "1040", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CREATE_STAGE", 
+        "id": "474", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CREATE_STAGE", 
+        "id": "D29", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ENTER_STAGE", 
+        "id": "47E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ENTER_STAGE", 
+        "id": "D2A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ENTER_STAGE_PLAYER", 
+        "id": "D34", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_QUICK_JOIN_STAGE", 
+        "id": "488", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_QUICK_JOIN_STAGE", 
+        "id": "D3E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_STAGE_SETUPINFO", 
+        "id": "492", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_STAGE_SETUPINFO", 
+        "id": "D48", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_STAGE_SETUPINFO", 
+        "id": "D52", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_STAGE_TEAMINFO", 
+        "id": "D5C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_PLAYER_TEAM", 
+        "id": "49C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_PLAYER_TEAM", 
+        "id": "D66", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_PLAYER_TEAM", 
+        "id": "D70", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_PLAYER_READY_STATE", 
+        "id": "4A6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_PLAYER_READY_STATE", 
+        "id": "D7A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_PLAYER_READY_STATE", 
+        "id": "D84", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_STAGE_CHATTING", 
+        "id": "4B0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_STAGE_CHATTING", 
+        "id": "D8E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_STAGE_CHATTING", 
+        "id": "D98", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_BACK_TO_LOBBY", 
+        "id": "4BA", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_BACK_TO_LOBBY", 
+        "id": "DA2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_BACK_TO_LOBBY", 
+        "id": "DA3", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_LEAVE_STAGE_PLAYER", 
+        "id": "DAC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_KICK_TO_LOBBY", 
+        "id": "4C4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_KICK_TO_LOBBY", 
+        "id": "DB6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_KICK_TO_LOBBY_PLAYER", 
+        "id": "DC0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_STAGE_PLAYER_INFO", 
+        "id": "E7E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_STAGE_PLAYER_ITEM_INFO", 
+        "id": "E7F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_MASTER", 
+        "id": "DCA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_WHISPER", 
+        "id": "4CE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_WHISPER", 
+        "id": "DD4", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_WHISPER", 
+        "id": "DDE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_PEERS_UDP_INFO", 
+        "id": "1BDA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_RESULT_PEER_HOLEPUNCHING", 
+        "id": "17F2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CHANGE_STATE", 
+        "id": "1BE4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_BATTLE_STATE", 
+        "id": "E38", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_START_BATTLE", 
+        "id": "4F6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_START_BATTLE_FAILED", 
+        "id": "E42", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_START_BATTLE", 
+        "id": "E43", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_GAME_START", 
+        "id": "E4D", 
+        "params": []
+    }, 
+    {
+        "desc": "C2UF::REQ_ENTER_BATTLE", 
+        "id": "500", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_GFS_INFO", 
+        "id": "E4C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ENTER_BATTLE", 
+        "id": "E56", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_STAGE_PLAYER_INFO", 
+        "id": "F14", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_NOTICE", 
+        "id": "F3C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_SHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_SHUTDOWN_REMAIN_TIME", 
+        "id": "1004", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_SHUTDOWN_ERROR", 
+        "id": "1005", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_UPDATED_ITEMS", 
+        "id": "1006", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_GM_COMMAND", 
+        "id": "6A4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_GM_COMMAND", 
+        "id": "10CC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ENTER_REDEEM_CODE", 
+        "id": "6AE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ENTER_REDEEM_CODE", 
+        "id": "10D6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_REFRESH_CASH", 
+        "id": "6B8", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_REFRESH_CASH", 
+        "id": "10E0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_PREFERRED_ZONE", 
+        "id": "6C2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_PREFERRED_ZONE", 
+        "id": "10EA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_PREFERRED_ZONE", 
+        "id": "10EB", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_COUNT_PREFERRED_ZONE", 
+        "id": "6CC", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_COUNT_PREFERRED_ZONE", 
+        "id": "10F4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_MATCH_PLAYER_COUNT", 
+        "id": "10FE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_STEAM_MICROTXN_AUTH", 
+        "id": "B54", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_STEAM_MICROTXN_AUTH", 
+        "id": "170C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::REQ_CLIENTINFO_GFS", 
+        "id": "1BEE", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::ACK_CLIENTINFO_GFS", 
+        "id": "17FC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::REQ_SET_INFO_GFS", 
+        "id": "1BF8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::ACK_SET_INFO_GFS", 
+        "id": "1806", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_CHECK_UDP_GFS", 
+        "id": "1810", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_CHECK_UDP_GFS", 
+        "id": "1C02", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::NTF_COMPLETE_CHECK_UDP_GFS", 
+        "id": "181A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CONNECT_GFS_COMPLETE", 
+        "id": "1C0C", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_KEEP_HOLEPUNCHING_GFS", 
+        "id": "1824", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_KEEP_HOLEPUNCHING_GFS", 
+        "id": "1C16", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_ABNORMAL_END_BATTLE", 
+        "id": "1C20", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_BATTLEINFO", 
+        "id": "1CCA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_JOIN_BATTLE_FAILED", 
+        "id": "E60", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::REQ_CREATE_HOST", 
+        "id": "1C34", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::ACK_CREATE_HOST", 
+        "id": "1838", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_FORCED_CHANGE_HOST", 
+        "id": "1842", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_INTRUDER_PEER_INFO", 
+        "id": "1C3E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_REMOVE_HOST", 
+        "id": "1C48", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_REMOVE_PLAYER", 
+        "id": "1C8E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::REQ_CHANGE_HOST", 
+        "id": "1C52", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::ACK_CHANGE_HOST", 
+        "id": "184C", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::REQ_CHANGE_HOST_INFO", 
+        "id": "1C53", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::ACK_CHANGE_HOST_INFO", 
+        "id": "184D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_LOADING_PROGRESS", 
+        "id": "1856", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_LOADING_PROGRESS", 
+        "id": "1C5C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_HOSTINFO", 
+        "id": "1C66", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_END_UDP_CONNECT_PEER_TO_HOST", 
+        "id": "1860", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_PEER_UDP_CONNECTED_HOST", 
+        "id": "1C70", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_RESOURCE_LOADING_COMPLETE", 
+        "id": "182E", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_PEER_INFO", 
+        "id": "1C2A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_RELAY_CHECK_TIMEOVER", 
+        "id": "1C7A", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_LOADING_END", 
+        "id": "1C84", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_LEAVE_BATTLE", 
+        "id": "18B0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_CHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_LEAVE_BATTLE", 
+        "id": "1D2E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_CHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_COUNTDOWN", 
+        "id": "1C98", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_BATTLE_SCORE", 
+        "id": "1CD4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_BATTLE_PLAYER_KILL_UPDATE_SCORE", 
+        "id": "1CDE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_BATTLE_KILL", 
+        "id": "189C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_BATTLE_CINEMATIC_KILL", 
+        "id": "18A6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_CURRENT_BATTLE_PLAY_LOG_PLAYER", 
+        "id": "186A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_CURRENT_BATTLE_PLAY_LOG_WEAPON", 
+        "id": "1874", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_BATTLE_RESULT", 
+        "id": "1CA2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_FAILED_GAME_START", 
+        "id": "E6A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_PLAYER_SPAWN", 
+        "id": "1CE8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_PLAYER_REVIVE", 
+        "id": "1D24", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CREATE_OBJECT", 
+        "id": "1CF2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CREATE_PRELOAD_OBJECT", 
+        "id": "1CFC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_START_ENVIRONMENT_SOUND", 
+        "id": "1D06", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_ADDITIONAL_BATTLE_INFO", 
+        "id": "1D10", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_LUA_RPC", 
+        "id": "1D1A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_BATTLE_PLAY_DATA", 
+        "id": "18BA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_CREATED_OBJECTS", 
+        "id": "18C2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_CREATED_OBJECT_SYNC_DATA", 
+        "id": "18C3", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_PHYSX_JOINT_BROKEN", 
+        "id": "18C4", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_SEND_CREATED_OBJECT_SYNC_DATA", 
+        "id": "1D37", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_SEND_PHYSX_JOINT_BROKEN", 
+        "id": "1D38", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_INTRUDE_SEND_SCORELIST", 
+        "id": "1D42", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_SYNC_SERIALIZE", 
+        "id": "18CE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_SEND_SYNC_SERIALIZE", 
+        "id": "1D4C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_OBJECT_ADDITIONAL_SYNCINFO", 
+        "id": "18CF", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_SEND_OBJECT_ADDITIONAL_SYNCINFO", 
+        "id": "1D4D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_SEND_SYNC_OBJECT_DESTROY", 
+        "id": "18D8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_SEND_SYNC_OBJECT_DESTROY", 
+        "id": "1D56", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_UPDATE_BATTLE_PLAY_LOG_PLAYER", 
+        "id": "1D60", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_UPDATE_BATTLE_PLAY_LOG_WEAPON", 
+        "id": "1D6A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CHANGE_BATTLEPLAYER_STATE", 
+        "id": "1D74", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_TRIGGERINFO", 
+        "id": "1D88", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_MARKERINFO", 
+        "id": "1D89", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_TRIGGER_EVENT", 
+        "id": "18E2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_FLAG_CHANGE", 
+        "id": "1D8A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_MOVE_OBJECT", 
+        "id": "1D8B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_USE_INTERACTION_OBJECT", 
+        "id": "1D8C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_WARP", 
+        "id": "1D8D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_MOVE_SCENE", 
+        "id": "1D8E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_DAMAGE", 
+        "id": "1D8F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_EFFECT", 
+        "id": "1D90", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SHOWHIDE", 
+        "id": "1D91", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_DESTROY_NPC", 
+        "id": "1D92", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_INTERACTION", 
+        "id": "18EC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_PLAY_CAMERAANI", 
+        "id": "1D93", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_CHANGE_OBJECT_STATE", 
+        "id": "1D94", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_TRIGGER_ONOFF", 
+        "id": "1D95", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SHOW_SUBTITLE", 
+        "id": "1D96", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SHOW_OBJECTIVE", 
+        "id": "1D97", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SHOW_IN_GAME_GUIDE", 
+        "id": "1D98", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_RESERVE_ENDING_VIDEO", 
+        "id": "1D99", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_ADD_BUFF_TO_PLAYER", 
+        "id": "1D9A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_REMOVE_BUFF_FROM_PLAYER", 
+        "id": "1D9B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_SCRIPT_PROP_DESTROYED", 
+        "id": "18F6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SOUND_ONOFF", 
+        "id": "1D9C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_SET_MARKER", 
+        "id": "1D9D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SCRIPT_DISABLE_INPUT", 
+        "id": "1D9E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_WINGMAN_TO_REVIVE", 
+        "id": "1900", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_GET_WORLDITEM", 
+        "id": "187E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_GET_WORLDITEM", 
+        "id": "1CAC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_RELAY_TCP", 
+        "id": "1888", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_RELAY_UDP", 
+        "id": "1892", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_RELAY_TCP", 
+        "id": "1CB6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_RELAY_UDP", 
+        "id": "1CC0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_ERROR", 
+        "id": "1BBC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_DISCONNECT_CLIENT", 
+        "id": "1BC6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_DISCONNECT_CLIENT", 
+        "id": "DE8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_DISCONNECT", 
+        "id": "DE9", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ITEM_INSTANCE_LIST", 
+        "id": "DF2", 
+        "params": [
+            {
+                "name": "ErrorCode", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "INSTANCEITEM", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_REWARD_LIST", 
+        "id": "DF3", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CHANGE_STATE_BATTLE", 
+        "id": "1B80", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_FAIL_UDP_KEEP_HOLE_PUNCHING_TO_GFS", 
+        "id": "1770", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_SET_TCP_RELAY_HOST_TO_PEER", 
+        "id": "17DE", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_CHANGE_TCP_RELAY_HOST_TO_PEER", 
+        "id": "1BD0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_DISCONNECT_PLAYER_LOST_UDP_CONNECTION", 
+        "id": "17E8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_TERMINATE_PROGRAM", 
+        "id": "3FC", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_TERMINATE_PROGRAM", 
+        "id": "C44", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::NTF_ENTER_CHAT_CHANNEL", 
+        "id": "DFC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_LEAVE_CHAT_CHANNEL", 
+        "id": "E06", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ENTER_BATTLE_IN_CHAT_CHANNEL", 
+        "id": "E07", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_LEAVE_BATTLE_IN_CHAT_CHANNEL", 
+        "id": "E08", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ENTER_CHAT_CHANNEL", 
+        "id": "4D8", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ENTER_CHAT_CHANNEL", 
+        "id": "E10", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_LEAVE_CHAT_CHANNEL", 
+        "id": "4D9", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_LEAVE_CHAT_CHANNEL", 
+        "id": "E12", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_UPDATE_CHAT_CHANNEL_LIST", 
+        "id": "4E2", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_UPDATE_CHAT_CHANNEL_LIST", 
+        "id": "E1A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHATTING_CHAT_CHANNEL", 
+        "id": "4EC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHATTING_CHAT_CHANNEL", 
+        "id": "E2E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHATTING_CHAT_CHANNEL", 
+        "id": "E24", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_INFO", 
+        "id": "1E64", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_INFO", 
+        "id": "E74", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_OWN_ACHIEVEMENT_INFO", 
+        "id": "E88", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ADD_COMPLETE_ACHIEVEMENT", 
+        "id": "E92", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_COMPLETE_ACHIEVEMENT_OTHER_PLAYER", 
+        "id": "1B8A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_GM_GOD_MODE", 
+        "id": "1B8C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_BATTLE_CHATTING", 
+        "id": "1B94", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_UPDATE_CHARACTER_COLLECTION_DATA", 
+        "id": "E9C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_OWN_SCENARIO_INFO", 
+        "id": "EA6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "CHARACTER_SCENARIO_INFO", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_UPDATE_COMPLETE_SCENARIO_INFO", 
+        "id": "F50", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_DEV_DUMMY", 
+        "id": "1E6E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_BECOME_NEMESIS", 
+        "id": "1E78", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_REVENGE_TO_NEMESIS", 
+        "id": "1E82", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_APPEAR_PUBLIC_ENEMY", 
+        "id": "1E8C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SHUTDOWN_PUBLIC_ENEMY", 
+        "id": "1E96", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_WORLDITEM_TIMEOVER", 
+        "id": "1EA0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_SET_MENTALOBJECT", 
+        "id": "1D9F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_DISCONNECT", 
+        "id": "50A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_CHANGE_ITEM_SLOT", 
+        "id": "514", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CHANGE_ITEM_SLOT", 
+        "id": "EB0", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_ITEM_SLOT", 
+        "id": "EB1", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_TEMP_RELAY_ON", 
+        "id": "190A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::NTF_TEMP_RELAY_OFF", 
+        "id": "1914", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_TEMP_USE_RELAY", 
+        "id": "1B58", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_TEMP_NOT_USE_RELAY", 
+        "id": "1B62", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::NTF_TEMP_GFS_CONNECT_COMPLETE", 
+        "id": "1B6C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_TEMP_UDP_CHECK_COMPLETE", 
+        "id": "1B76", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_TEMP_CREATE_BATTLE", 
+        "id": "191E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_TEMP_ENTER_BATTLE", 
+        "id": "1928", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_GM_GOD_MODE", 
+        "id": "1932", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_GM_KILL_ALL_NPC", 
+        "id": "1933", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_GM_SERVER_PLAYER_INFO", 
+        "id": "1934", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_GM_SET_PLAYER_PERM", 
+        "id": "1935", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::REQ_SPAWN_NPC", 
+        "id": "193C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_BATTLE_CHATTING", 
+        "id": "1950", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_ERROR_INVALID_CMD", 
+        "id": "F28", 
+        "params": [
+            {
+                "name": "Error", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::REQ_CHECK_HOST", 
+        "id": "1BA8", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::ACK_CHECK_HOST", 
+        "id": "195A", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::REQ_LATENCY_BETWEEN_PEERS", 
+        "id": "1BA9", 
+        "params": []
+    }, 
+    {
+        "desc": "C2GF::ACK_LATENCY_BETWEEN_PEERS", 
+        "id": "195B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_ERROR_INVALID_CMD", 
+        "id": "1B9E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_SUPPLY_BOX_TIME", 
+        "id": "1036", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_CREATE_CLAN", 
+        "id": "1022", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_RENAME_CLAN", 
+        "id": "102E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_INVITE_CLAN", 
+        "id": "1023", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_INVITE_CLAN", 
+        "id": "1024", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_RESPONSE_INVITE_CLAN", 
+        "id": "1025", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_GET_CLANINFOS", 
+        "id": "1026", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_GET_CLANINVITES", 
+        "id": "1027", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_VANISH_CLANMEMBER", 
+        "id": "1028", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_DELETE_CLAN", 
+        "id": "1029", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_CLAN_WITHDRAW_FROM_CLAN", 
+        "id": "102A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_CLANMEMBER_INSERTED", 
+        "id": "102B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_CLANMEMBER_DELETED", 
+        "id": "102C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CLAN_CLANMEMBERINFO_CHANGED", 
+        "id": "102D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_USE_ITEM", 
+        "id": "1964", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_USE_ITEM", 
+        "id": "1BB1", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_USE_ITEM", 
+        "id": "1BB2", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_DEBUG_CHAT", 
+        "id": "1BB3", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_ARCHIVEMENT_REWARD", 
+        "id": "64A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_ARCHIVEMENT_REWARD", 
+        "id": "1072", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_RECONNECT", 
+        "id": "107C", 
+        "params": []
+    }, 
+    {
+        "desc": "C2UF::REQ_OTHER_PLAYER_INFO", 
+        "id": "654", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_OTHER_PLAYER_INFO", 
+        "id": "1086", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_EVENT_INFO", 
+        "id": "65E", 
+        "params": []
+    }, 
+    {
+        "desc": "UF2C::ACK_EVENT_INFO", 
+        "id": "1090", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_START_SURRENDER_VOTE", 
+        "id": "19C8", 
+        "params": []
+    }, 
+    {
+        "desc": "GF2C::ACK_START_SURRENDER_VOTE", 
+        "id": "1EAA", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2GF::REQ_VOTE_SURRENDER", 
+        "id": "19C9", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::ACK_VOTE_SURRENDER", 
+        "id": "1EAB", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_VOTE_SURRENDER", 
+        "id": "1EAC", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "GF2C::NTF_RESULT_SURRENDER_VOTE", 
+        "id": "1EAD", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "P2P::REQ_HOLEPUNCHING_UDP_PEER", 
+        "id": "55F0", 
+        "params": [
+            {
+                "name": "PlayerGSID", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "hp sequence no", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "P2P::ACK_HOLEPUNCHING_UDP_PEER", 
+        "id": "55F1", 
+        "params": [
+            {
+                "name": "PlayerGSID", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "hp sequence no", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "delayed latency", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "P2P::REQ_KEEP_HOLEPUNCHING", 
+        "id": "55F2", 
+        "params": [
+            {
+                "name": "PlayerGSID", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "hp sequence no", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "P2P::ACK_KEEP_HOLEPUNCHING", 
+        "id": "55F3", 
+        "params": [
+            {
+                "name": "PlayerGSID", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "hp sequence no", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "delayed latency", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_SYNCTICK_GET", 
+        "id": "5208", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_SYNCTICK_PUSH", 
+        "id": "4E20", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_SYNCTICK_COMPLETE", 
+        "id": "5209", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_JOINTDESTROY", 
+        "id": "4E21", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_CREATE_PROJECTILE", 
+        "id": "4E22", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_DESTROY_HOSTOBJECT", 
+        "id": "4E24", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNC_SERIALIZE", 
+        "id": "4E23", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_KNOCK_BY_DAMAGE", 
+        "id": "4E25", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_KNOCK_BY_ANIMATION", 
+        "id": "4E26", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_KNOCKBACK_PHYSXACTOR", 
+        "id": "4E27", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_OBJECTSTATEINFO", 
+        "id": "4E28", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_OBJECTSTATEINFO", 
+        "id": "520A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_ATTACK_SHOT", 
+        "id": "520B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_ATTACK_ZOOM_SHOT", 
+        "id": "520E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_ATTACK_PROJECTILE", 
+        "id": "520F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_USE_SKILL", 
+        "id": "5210", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_NEED_TO_REPOST_STICKINFO", 
+        "id": "4E2A", 
+        "params": []
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_TARGETSTICKINFO", 
+        "id": "5211", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_ATTACK_START", 
+        "id": "520C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_NOTIFY_ATTACK_STOP", 
+        "id": "520D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_MODIFY_MOVEMENTFIXKEYFORHOSTCHECK", 
+        "id": "4E29", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNCHP", 
+        "id": "4E2D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNCAP", 
+        "id": "4E2E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNCZP", 
+        "id": "4E2F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNC_AMMO", 
+        "id": "4E30", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_ONHIT_BODYPARTS", 
+        "id": "4E4B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_ANIMATIONMOVE_INITIALROTATION", 
+        "id": "5212", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_PHYSXSYNCINFO", 
+        "id": "4E34", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_PLAYERSYNCINFO", 
+        "id": "5213", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UCHAR"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_MOVEINFO_PHYSXACTOR", 
+        "id": "4E31", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_PLAYERSYNCINFO", 
+        "id": "4E32", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_NPCSYNCINFO", 
+        "id": "4E33", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_ATTACK_HIT_OBJECT_INFO", 
+        "id": "4E2B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_ATTACK_HIT_MAP_INFO", 
+        "id": "4E2C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::REQ_CHECK_NETWORKDELAY", 
+        "id": "4E3F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::ACK_CHECK_NETWORKDELAY", 
+        "id": "5214", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_NPC_MOVEINFO", 
+        "id": "4E35", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_VEC"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_BOSS_ANI_BLENDRATIO", 
+        "id": "4E36", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_BOSS_SYNC_INFO", 
+        "id": "4E37", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_MODIFY_UI_HIT_INDICATOR", 
+        "id": "4E38", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_VEC"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_HIT_VICTIM_TO_ATTACKER", 
+        "id": "4E39", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_CRITICAL_HIT", 
+        "id": "4E3A", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_CRITICAL_ATTACK", 
+        "id": "4E3B", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_COMBO_COUNT", 
+        "id": "4E3C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_MULTI_KILL_COUNT", 
+        "id": "4E3D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::ACK_LIVE_KILL_COUNT", 
+        "id": "4E3E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::P2H::REQ_EVENT1", 
+        "id": "5215", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_EVENT1", 
+        "id": "4E43", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_EVENT2", 
+        "id": "4E44", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_EVENT3", 
+        "id": "4E45", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BLOB"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_OVERLAP_STATE", 
+        "id": "4E40", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_RESERVE_STATE", 
+        "id": "4E41", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_SYNC_BOSSWEAPON_INFO", 
+        "id": "4E42", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_MODIFY_ANIMATION_TO_HOSTTICK", 
+        "id": "4E46", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::NTF_MODIFY_MOVEBYSCRIPT_TO_HOST", 
+        "id": "4E4D", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_BOOL"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_FLOAT"
+            }
+        ]
+    }, 
+    {
+        "desc": "H2P::RUT_HIT_BY_DUMMY", 
+        "id": "4E4E", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_VEC"
+            }
+        ]
+    }, 
+    {
+        "desc": "H2P::ACK_USE_SKILL", 
+        "id": "4E4F", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_MISSILE_ACQUIRE_TARGET", 
+        "id": "4E47", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }
+        ]
+    }, 
+    {
+        "desc": "cmd::H2P::RUT_BOSSWEAPON_EFFECT", 
+        "id": "4E48", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UID"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "P2H::REQ_CHECK_UDP_HOST", 
+        "id": "5216", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_UINT64"
+            }
+        ]
+    }
+]
