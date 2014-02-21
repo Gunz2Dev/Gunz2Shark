@@ -76,6 +76,8 @@ namespace Gunz2Shark
 
             if (cmd != null)
             {
+                var writer = new StreamWriter("gunz2shark.log", true);
+
                 var output = string.Format("[{0}] | {1} | {2}({2:X}) | Parameters ->", toServer ? "C2S" : "S2C", cmd.Desc, cmd.GetOpcode());
 
                 foreach (var param in cmd.Params)
@@ -84,6 +86,9 @@ namespace Gunz2Shark
                 output += "end";
 
                 Console.WriteLine(output);
+                writer.WriteLine(output);
+                Program.PacketLog(packet, 0, packet.Length, writer);
+                writer.Close();
             }
             else
                 Console.WriteLine("Unknown command: {0}", commandId);

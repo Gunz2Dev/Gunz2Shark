@@ -67,7 +67,6 @@ namespace Gunz2Shark
             }
             for (Int32 iCount = 0, j = 0; iCount < lstDump.Count; iCount++, j++)
             {
-                Console.WriteLine(lstDump[iCount]);
                 writer.WriteLine(lstDump[iCount]);
                 writer.Flush();
             }
