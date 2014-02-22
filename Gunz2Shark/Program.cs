@@ -27,7 +27,7 @@ namespace Gunz2Shark
 
             var shark = new Shark(device);
             shark.Start();
-            Console.ReadLine();
+
         }
 
         public static void PacketLog(byte[] data, int index, int length, StreamWriter writer)
