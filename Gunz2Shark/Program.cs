@@ -12,7 +12,7 @@ namespace Gunz2Shark
         static void Main(string[] args)
         {
             Console.BufferWidth = Console.WindowWidth = 200;
-            Console.Title = "GunZ2Shark";
+            Console.Title = "GunZ2 Shark";
 
             WinPcapDevice device = null;
             var devices = WinPcapDeviceList.Instance;
@@ -21,11 +21,11 @@ namespace Gunz2Shark
                 Console.WriteLine("{0}. {1}", i, devices[i].Description);
 
             if(args.Length < 1)
-                device = devices[1];
+                device = devices[2];
             else
                 device = devices[Int32.Parse(args[0])];
 
-            var shark = new Shark(device);
+            var shark = new SharkStream(device);
             shark.Start();
 
         }
@@ -68,8 +68,10 @@ namespace Gunz2Shark
             for (Int32 iCount = 0, j = 0; iCount < lstDump.Count; iCount++, j++)
             {
                 writer.WriteLine(lstDump[iCount]);
+                Console.WriteLine(lstDump[iCount]);
                 writer.Flush();
             }
+
 
         }
     }
