@@ -101,8 +101,11 @@ namespace Gunz2Shark
 
                 var output = string.Format("[{0}] | {1} | {2}({2:X}) | Parameters ->", toServer ? "C2S" : "S2C", cmd.Desc, cmd.GetOpcode());
 
-                foreach (var param in cmd.Params)
-                    output += string.Format("[{0}]|{1} -> ", param.Name.Length > 0 ? param.Name : "Undefined", param.Type);
+                if (cmd.Params != null)
+                {
+                    foreach (var param in cmd.Params)
+                        output += string.Format("{0} -> ", param.Type);
+                }
 
                 output += "end";
 

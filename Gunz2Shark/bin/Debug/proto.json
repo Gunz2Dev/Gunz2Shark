@@ -255,8 +255,7 @@
     }, 
     {
         "desc": "C2UF::REQ_STATE_CHARACTER_CREATE", 
-        "id": "407", 
-        "params": []
+        "id": "407"
     }, 
     {
         "desc": "UF2C::ACK_STATE_CHARACTER_CREATE", 
@@ -270,8 +269,7 @@
     }, 
     {
         "desc": "C2UF::REQ_STATE_CHARACTER_LIST", 
-        "id": "408", 
-        "params": []
+        "id": "408"
     }, 
     {
         "desc": "UF2C::ACK_STATE_CHARACTER_LIST", 
@@ -345,8 +343,7 @@
     }, 
     {
         "desc": "C2UF::REQ_BACK_TO_LOGIN", 
-        "id": "424", 
-        "params": []
+        "id": "424"
     }, 
     {
         "desc": "UF2C::ACK_BACK_TO_LOGIN", 
@@ -468,8 +465,7 @@
     }, 
     {
         "desc": "C2UF::REQ_BACK_TO_CHARACTERLIST", 
-        "id": "438", 
-        "params": []
+        "id": "438"
     }, 
     {
         "desc": "UF2C::ACK_BACK_TO_CHARACTERLIST", 
@@ -802,6 +798,14 @@
             {
                 "name": "", 
                 "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
             }
         ]
     }, 
@@ -939,8 +943,7 @@
     }, 
     {
         "desc": "C2UF::REQ_TESLA_MACHINE_LIST", 
-        "id": "622", 
-        "params": []
+        "id": "622"
     }, 
     {
         "desc": "UF2C::ACK_TESLA_MACHINE_LIST", 
@@ -958,8 +961,7 @@
     }, 
     {
         "desc": "C2UF::REQ_TESLA_BUFF_LIST", 
-        "id": "623", 
-        "params": []
+        "id": "623"
     }, 
     {
         "desc": "UF2C::ACK_TESLA_BUFF_LIST", 
@@ -1040,13 +1042,16 @@
             {
                 "name": "", 
                 "type": "CPT_BLOB"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT64"
             }
         ]
     }, 
     {
         "desc": "C2UF::REQ_TESLA_MACHINE_RUN_COUNTER_LIST", 
-        "id": "626", 
-        "params": []
+        "id": "626"
     }, 
     {
         "desc": "UF2C::ACK_TESLA_MACHINE_RUN_COUNTER_LIST", 
@@ -1288,8 +1293,7 @@
     }, 
     {
         "desc": "C2UF::REQ_ITEM_TRANSFORM_NEED_LIST", 
-        "id": "5E0", 
-        "params": []
+        "id": "5E0"
     }, 
     {
         "desc": "UF2C::ACK_ITEM_TRANSFORM_NEED_LIST", 
@@ -1307,8 +1311,7 @@
     }, 
     {
         "desc": "C2UF::REQ_ITEM_TRANSFORM_REWARD_LIST", 
-        "id": "5E1", 
-        "params": []
+        "id": "5E1"
     }, 
     {
         "desc": "UF2C::ACK_ITEM_TRANSFORM_REWARD_LIST", 
@@ -1500,13 +1503,11 @@
     }, 
     {
         "desc": "C2UF::REQ_CLAN_DELETE_CLAN", 
-        "id": "612", 
-        "params": []
+        "id": "612"
     }, 
     {
         "desc": "C2UF::REQ_CLAN_WITHDRAW_FROM_CLAN", 
-        "id": "613", 
-        "params": []
+        "id": "613"
     }, 
     {
         "desc": "C2UF::REQ_CLAN_RENAME_CLAN", 
@@ -1520,8 +1521,7 @@
     }, 
     {
         "desc": "C2UF::REQ_SUPPLY_BOX_OPEN", 
-        "id": "618", 
-        "params": []
+        "id": "618"
     }, 
     {
         "desc": "UF2C::ACK_SUPPLY_BOX_OPEN", 
@@ -1721,8 +1721,7 @@
     }, 
     {
         "desc": "C2UF::REQ_PARTY_LEAVE", 
-        "id": "58C", 
-        "params": []
+        "id": "58C"
     }, 
     {
         "desc": "UF2C::ACK_PARTY_LEAVE", 
@@ -2126,8 +2125,7 @@
     }, 
     {
         "desc": "C2UF::REQ_BACK_TO_LOBBY", 
-        "id": "4BA", 
-        "params": []
+        "id": "4BA"
     }, 
     {
         "desc": "UF2C::ACK_BACK_TO_LOBBY", 
@@ -2337,8 +2335,7 @@
     }, 
     {
         "desc": "UF2C::NTF_GAME_START", 
-        "id": "E4D", 
-        "params": []
+        "id": "E4D"
     }, 
     {
         "desc": "C2UF::REQ_ENTER_BATTLE", 
@@ -2347,6 +2344,26 @@
             {
                 "name": "", 
                 "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "C2UF::REQ_INTRUSION_BATTLE", 
+        "id": "515", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_INTRUSION_BATTLE", 
+        "id": "D2C", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
             }
         ]
     }, 
@@ -2469,6 +2486,30 @@
         ]
     }, 
     {
+        "desc": "C2UF::REQ_USER_COMMAND", 
+        "id": "6A6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_USER_COMMAND", 
+        "id": "10CD", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_WSTR"
+            }
+        ]
+    }, 
+    {
         "desc": "C2UF::REQ_ENTER_REDEEM_CODE", 
         "id": "6AE", 
         "params": [
@@ -2490,8 +2531,7 @@
     }, 
     {
         "desc": "C2UF::REQ_REFRESH_CASH", 
-        "id": "6B8", 
-        "params": []
+        "id": "6B8"
     }, 
     {
         "desc": "UF2C::ACK_REFRESH_CASH", 
@@ -2547,8 +2587,7 @@
     }, 
     {
         "desc": "C2UF::REQ_COUNT_PREFERRED_ZONE", 
-        "id": "6CC", 
-        "params": []
+        "id": "6CC"
     }, 
     {
         "desc": "UF2C::ACK_COUNT_PREFERRED_ZONE", 
@@ -2575,6 +2614,28 @@
         ]
     }, 
     {
+        "desc": "UF2C::NTF_MATCH_PLAYERS_PER_TEAM", 
+        "id": "10FF", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::NTF_CHANGE_CLIENT_SVN_REVISION", 
+        "id": "170D"
+    }, 
+    {
         "desc": "C2UF::REQ_STEAM_MICROTXN_AUTH", 
         "id": "B54", 
         "params": [
@@ -2583,6 +2644,28 @@
                 "type": "CPT_BLOB"
             }
         ]
+    }, 
+    {
+        "desc": "C2UF::REQ_REPORT_A_HACK", 
+        "id": "BB6", 
+        "params": [
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_INT"
+            }, 
+            {
+                "name": "", 
+                "type": "CPT_STR"
+            }
+        ]
+    }, 
+    {
+        "desc": "UF2C::ACK_REPORT_A_HACK", 
+        "id": "170E"
     }, 
     {
         "desc": "UF2C::ACK_STEAM_MICROTXN_AUTH", 
@@ -2596,8 +2679,7 @@
     }, 
     {
         "desc": "GF2C::REQ_CLIENTINFO_GFS", 
-        "id": "1BEE", 
-        "params": []
+        "id": "1BEE"
     }, 
     {
         "desc": "C2GF::ACK_CLIENTINFO_GFS", 
@@ -2633,8 +2715,7 @@
     }, 
     {
         "desc": "C2GF::ACK_SET_INFO_GFS", 
-        "id": "1806", 
-        "params": []
+        "id": "1806"
     }, 
     {
         "desc": "C2GF::REQ_CHECK_UDP_GFS", 
@@ -2648,8 +2729,7 @@
     }, 
     {
         "desc": "GF2C::ACK_CHECK_UDP_GFS", 
-        "id": "1C02", 
-        "params": []
+        "id": "1C02"
     }, 
     {
         "desc": "C2GF::NTF_COMPLETE_CHECK_UDP_GFS", 
@@ -2663,8 +2743,7 @@
     }, 
     {
         "desc": "GF2C::NTF_CONNECT_GFS_COMPLETE", 
-        "id": "1C0C", 
-        "params": []
+        "id": "1C0C"
     }, 
     {
         "desc": "C2GF::REQ_KEEP_HOLEPUNCHING_GFS", 
@@ -2726,13 +2805,11 @@
     }, 
     {
         "desc": "GF2C::REQ_CREATE_HOST", 
-        "id": "1C34", 
-        "params": []
+        "id": "1C34"
     }, 
     {
         "desc": "C2GF::ACK_CREATE_HOST", 
-        "id": "1838", 
-        "params": []
+        "id": "1838"
     }, 
     {
         "desc": "C2GF::REQ_FORCED_CHANGE_HOST", 
@@ -2756,8 +2833,7 @@
     }, 
     {
         "desc": "GF2C::NTF_REMOVE_HOST", 
-        "id": "1C48", 
-        "params": []
+        "id": "1C48"
     }, 
     {
         "desc": "GF2C::NTF_REMOVE_PLAYER", 
@@ -2785,13 +2861,11 @@
     }, 
     {
         "desc": "C2GF::ACK_CHANGE_HOST", 
-        "id": "184C", 
-        "params": []
+        "id": "184C"
     }, 
     {
         "desc": "GF2C::REQ_CHANGE_HOST_INFO", 
-        "id": "1C53", 
-        "params": []
+        "id": "1C53"
     }, 
     {
         "desc": "C2GF::ACK_CHANGE_HOST_INFO", 
@@ -2879,8 +2953,7 @@
     }, 
     {
         "desc": "C2GF::NTF_RESOURCE_LOADING_COMPLETE", 
-        "id": "182E", 
-        "params": []
+        "id": "182E"
     }, 
     {
         "desc": "GF2C::NTF_PEER_INFO", 
@@ -2894,8 +2967,7 @@
     }, 
     {
         "desc": "GF2C::NTF_RELAY_CHECK_TIMEOVER", 
-        "id": "1C7A", 
-        "params": []
+        "id": "1C7A"
     }, 
     {
         "desc": "GF2C::NTF_LOADING_END", 
@@ -2929,8 +3001,7 @@
     }, 
     {
         "desc": "GF2C::NTF_COUNTDOWN", 
-        "id": "1C98", 
-        "params": []
+        "id": "1C98"
     }, 
     {
         "desc": "GF2C::NTF_BATTLE_SCORE", 
@@ -3086,8 +3157,7 @@
     }, 
     {
         "desc": "GF2C::NTF_START_ENVIRONMENT_SOUND", 
-        "id": "1D06", 
-        "params": []
+        "id": "1D06"
     }, 
     {
         "desc": "GF2C::NTF_ADDITIONAL_BATTLE_INFO", 
@@ -3863,8 +3933,7 @@
     }, 
     {
         "desc": "C2GF::NTF_FAIL_UDP_KEEP_HOLE_PUNCHING_TO_GFS", 
-        "id": "1770", 
-        "params": []
+        "id": "1770"
     }, 
     {
         "desc": "C2GF::REQ_SET_TCP_RELAY_HOST_TO_PEER", 
@@ -3898,13 +3967,11 @@
     }, 
     {
         "desc": "C2UF::REQ_TERMINATE_PROGRAM", 
-        "id": "3FC", 
-        "params": []
+        "id": "3FC"
     }, 
     {
         "desc": "UF2C::ACK_TERMINATE_PROGRAM", 
-        "id": "C44", 
-        "params": []
+        "id": "C44"
     }, 
     {
         "desc": "UF2C::NTF_ENTER_CHAT_CHANNEL", 
@@ -4052,8 +4119,7 @@
     }, 
     {
         "desc": "C2UF::REQ_UPDATE_CHAT_CHANNEL_LIST", 
-        "id": "4E2", 
-        "params": []
+        "id": "4E2"
     }, 
     {
         "desc": "UF2C::ACK_UPDATE_CHAT_CHANNEL_LIST", 
@@ -4399,13 +4465,11 @@
     }, 
     {
         "desc": "GF2C::NTF_TEMP_USE_RELAY", 
-        "id": "1B58", 
-        "params": []
+        "id": "1B58"
     }, 
     {
         "desc": "GF2C::NTF_TEMP_NOT_USE_RELAY", 
-        "id": "1B62", 
-        "params": []
+        "id": "1B62"
     }, 
     {
         "desc": "GF2C::NTF_TEMP_GFS_CONNECT_COMPLETE", 
@@ -4423,8 +4487,7 @@
     }, 
     {
         "desc": "GF2C::NTF_TEMP_UDP_CHECK_COMPLETE", 
-        "id": "1B76", 
-        "params": []
+        "id": "1B76"
     }, 
     {
         "desc": "C2GF::REQ_TEMP_CREATE_BATTLE", 
@@ -4460,23 +4523,27 @@
     }, 
     {
         "desc": "C2GF::REQ_GM_GOD_MODE", 
-        "id": "1932", 
-        "params": []
+        "id": "1932"
     }, 
     {
         "desc": "C2GF::REQ_GM_KILL_ALL_NPC", 
-        "id": "1933", 
-        "params": []
+        "id": "1933"
     }, 
     {
         "desc": "C2GF::REQ_GM_SERVER_PLAYER_INFO", 
-        "id": "1934", 
-        "params": []
+        "id": "1934"
     }, 
     {
         "desc": "C2GF::REQ_GM_SET_PLAYER_PERM", 
-        "id": "1935", 
-        "params": []
+        "id": "1935"
+    }, 
+    {
+        "desc": "C2UF::REQ_GM_GHOSTMODE", 
+        "id": "6A5"
+    }, 
+    {
+        "desc": "UF2C::ACK_GM_GHOSTMODE", 
+        "id": "EBA"
     }, 
     {
         "desc": "C2GF::REQ_SPAWN_NPC", 
@@ -4513,23 +4580,24 @@
             {
                 "name": "Error", 
                 "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "Command ID", 
+                "type": "CPT_USHORT"
             }
         ]
     }, 
     {
         "desc": "GF2C::REQ_CHECK_HOST", 
-        "id": "1BA8", 
-        "params": []
+        "id": "1BA8"
     }, 
     {
         "desc": "C2GF::ACK_CHECK_HOST", 
-        "id": "195A", 
-        "params": []
+        "id": "195A"
     }, 
     {
         "desc": "GF2C::REQ_LATENCY_BETWEEN_PEERS", 
-        "id": "1BA9", 
-        "params": []
+        "id": "1BA9"
     }, 
     {
         "desc": "C2GF::ACK_LATENCY_BETWEEN_PEERS", 
@@ -4547,6 +4615,10 @@
         "params": [
             {
                 "name": "", 
+                "type": "CPT_USHORT"
+            }, 
+            {
+                "name": "Command ID", 
                 "type": "CPT_USHORT"
             }
         ]
@@ -4809,8 +4881,7 @@
     }, 
     {
         "desc": "UF2C::NTF_RECONNECT", 
-        "id": "107C", 
-        "params": []
+        "id": "107C"
     }, 
     {
         "desc": "C2UF::REQ_OTHER_PLAYER_INFO", 
@@ -4832,6 +4903,10 @@
             }, 
             {
                 "name": "", 
+                "type": "CPT_WSTR"
+            }, 
+            {
+                "name": "", 
                 "type": "CPT_BLOB"
             }, 
             {
@@ -4842,8 +4917,7 @@
     }, 
     {
         "desc": "C2UF::REQ_EVENT_INFO", 
-        "id": "65E", 
-        "params": []
+        "id": "65E"
     }, 
     {
         "desc": "UF2C::ACK_EVENT_INFO", 
@@ -4861,8 +4935,7 @@
     }, 
     {
         "desc": "C2GF::REQ_START_SURRENDER_VOTE", 
-        "id": "19C8", 
-        "params": []
+        "id": "19C8"
     }, 
     {
         "desc": "GF2C::ACK_START_SURRENDER_VOTE", 
@@ -5180,8 +5253,7 @@
     }, 
     {
         "desc": "cmd::H2P::NTF_NEED_TO_REPOST_STICKINFO", 
-        "id": "4E2A", 
-        "params": []
+        "id": "4E2A"
     }, 
     {
         "desc": "cmd::P2H::REQ_TARGETSTICKINFO", 

@@ -71,8 +71,6 @@ namespace Gunz2Shark
                 Console.WriteLine(lstDump[iCount]);
                 writer.Flush();
             }
-
-
         }
     }
 }
